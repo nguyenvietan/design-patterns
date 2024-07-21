@@ -1,6 +1,6 @@
 package main.java.org.example.creational.factory;
 
-public class ShapeFactory {
+public class Main {
     public Shape getShape(String type) {
         if (type.equals("circle")) {
             return new Circle();
@@ -13,7 +13,7 @@ public class ShapeFactory {
     }
 
     public static void main(String[] args) {
-        ShapeFactory shapeFactory = new ShapeFactory();
+        Main shapeFactory = new Main();
 
         Shape circle = shapeFactory.getShape("circle");
         circle.draw();
